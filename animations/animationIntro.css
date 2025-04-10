@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 20px solid black;
+  border-top: 20px solid red;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes loader {
+    to{
+        transform: rotate(360deg);
+        border-top: 20px solid black;
+        border-right: 20px solid red;
+        border-bottom :20px solid red;
+        border-left: 20px solid red;
+        
+    }
+}
